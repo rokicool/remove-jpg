@@ -11,11 +11,12 @@ def main():
       formatter_class=argparse.RawDescriptionHelpFormatter,
       epilog=textwrap.dedent('''\
          Info:
-             If you chose to save both RAW and .JPG file in your camera both files will be copied to Lightroom storage. At this moment you 
-             probably don't need these .JPG files anymore and they could be deleted safely. 
+             If you chose to save both RAW and .JPG file in your camera both files will be copied to 
+             Lightroom storage. At this moment you probably don't need these .JPG files anymore and 
+             they could be deleted safely. 
 
-             This utility is used to remove unnecessary .JPG files from Photoshop Lightroom storage. If there are both RAW and JPG files are
-             in you directory - the .JPG file will be deleted.
+             This utility is used to remove unnecessary .JPG files from Photoshop Lightroom storage. 
+             If there are both RAW and JPG files are in you directory - the .JPG file will be deleted.
              
          '''))
     ap.add_argument("-w", "--WorkDir", required=False, default=os.getcwd(), help="working directory. Default - current dir")
